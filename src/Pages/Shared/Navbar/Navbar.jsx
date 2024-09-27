@@ -54,7 +54,7 @@ const Navbar = () => {
       {/* OPTB-P1-kutumbpur-high-school */}
 
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
           <NavLink
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -96,52 +96,60 @@ const Navbar = () => {
             }`}
           >
             <ul className="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <Dropdown
-                title="Home"
-                items={[
-                  { label: "About Us", link: "/about" },
-                  { label: "Contact", link: "/contact" },
-                  { label: "Updates", link: "/updates" },
-                  { label: "Testimonials", link: "/testimonials" },
-                ]}
-                isOpen={isHomeOpen}
-                toggle={() => setHomeOpen(!isHomeOpen)}
-              />
-              <Dropdown
-                title="Academics"
-                items={[
-                  { label: "Academics", link: "/academics" },
-                  { label: "Admissions", link: "/admissions" },
-                  { label: "Events", link: "/events" },
-                ]}
-                isOpen={isAcademicsOpen}
-                toggle={() => setAcademicsOpen(!isAcademicsOpen)}
-              />
-              <Dropdown
-                title="Portals"
-                items={[
-                  { label: "Faculty Portal", link: "/faculty-portal" },
-                  { label: "Student Portal", link: "/student-portal" },
-                  { label: "Parent Portal", link: "/parent-portal" },
-                ]}
-                isOpen={isPortalsOpen}
-                toggle={() => setPortalsOpen(!isPortalsOpen)}
-              />
-              <Dropdown
-                title="Curiosity Corner"
-                items={[
-                  { label: "Resources", link: "/resources" },
-                  {
-                    label: "Extracurricular Activities",
-                    link: "/extracurricular",
-                  },
-                  { label: "Alumni Section", link: "/alumni" },
-                  { label: "Library", link: "/library" },
-                  { label: "Events Calendar", link: "/events-calendar" },
-                ]}
-                isOpen={isCuriosityCornerOpen}
-                toggle={() => setCuriosityCornerOpen(!isCuriosityCornerOpen)}
-              />
+              <NavLink to="/">
+                <Dropdown
+                  title="Home"
+                  items={[
+                    { label: "About Us", link: "/about" },
+                    { label: "Contact", link: "/contact" },
+                    { label: "Updates", link: "/updates" },
+                    { label: "Testimonials", link: "/testimonials" },
+                  ]}
+                  isOpen={isHomeOpen}
+                  toggle={() => setHomeOpen(!isHomeOpen)}
+                />
+              </NavLink>
+              <NavLink to="/edu-adventure">
+                <Dropdown
+                  title="Edu Adventure"
+                  items={[
+                    { label: "Academics", link: "/academics" },
+                    { label: "Admissions", link: "/admissions" },
+                    { label: "Events", link: "/events" },
+                  ]}
+                  isOpen={isAcademicsOpen}
+                  toggle={() => setAcademicsOpen(!isAcademicsOpen)}
+                />
+              </NavLink>
+              <NavLink to="/portals">
+                <Dropdown
+                  title="Portals"
+                  items={[
+                    { label: "Faculty Portal", link: "/faculty-portal" },
+                    { label: "Student Portal", link: "/student-portal" },
+                    { label: "Parent Portal", link: "/parent-portal" },
+                  ]}
+                  isOpen={isPortalsOpen}
+                  toggle={() => setPortalsOpen(!isPortalsOpen)}
+                />
+              </NavLink>
+              <NavLink to="/curiosity-corner">
+                <Dropdown
+                  title="Curiosity Corner"
+                  items={[
+                    { label: "Resources", link: "/resources" },
+                    {
+                      label: "Extracurricular Activities",
+                      link: "/extracurricular",
+                    },
+                    { label: "Alumni Section", link: "/alumni" },
+                    { label: "Library", link: "/library" },
+                    { label: "Events Calendar", link: "/events-calendar" },
+                  ]}
+                  isOpen={isCuriosityCornerOpen}
+                  toggle={() => setCuriosityCornerOpen(!isCuriosityCornerOpen)}
+                />
+              </NavLink>
               <li>
                 <NavLink
                   to="/faq"

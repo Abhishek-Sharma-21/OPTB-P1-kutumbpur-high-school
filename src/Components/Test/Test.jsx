@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
 const Test = () => {
-  const [isHomeOpen, setHomeOpen] = useState(false);
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isAcademicsOpen, setAcademicsOpen] = useState(false);
-  const [isPortalsOpen, setPortalsOpen] = useState(false);
-  const [isCuriosityCornerOpen, setCuriosityCornerOpen] = useState(false);
+//   const [isHomeOpen, setHomeOpen] = useState(false);
+//   const [isMenuOpen, setMenuOpen] = useState(false);
+//   const [isAcademicsOpen, setAcademicsOpen] = useState(false);
+//   const [isPortalsOpen, setPortalsOpen] = useState(false);
+//   const [isCuriosityCornerOpen, setCuriosityCornerOpen] = useState(false);
 
   return (
     <>
+      {/* 
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
           <a
@@ -61,10 +62,8 @@ const Test = () => {
                   Home
                 </a>
               </li>
-              {/* ----------------------------------------------------------- */}
               <li className="relative">
                 {" "}
-                {/* Added relative to parent container */}
                 <button
                   onClick={() => setHomeOpen(!isHomeOpen)}
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700"
@@ -125,10 +124,8 @@ const Test = () => {
                   </div>
                 )}
               </li>
-              {/* ------------------------------------------------------------ */}
               <li className="relative">
                 {" "}
-                {/* Added relative to parent container */}
                 <button
                   onClick={() => setAcademicsOpen(!isAcademicsOpen)}
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700"
@@ -181,10 +178,8 @@ const Test = () => {
                   </div>
                 )}
               </li>
-              {/* ----------------------------------------------------------- */}
               <li className="relative">
                 {" "}
-                {/* Added relative to parent container */}
                 <button
                   onClick={() => setPortalsOpen(!isPortalsOpen)}
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700"
@@ -237,11 +232,8 @@ const Test = () => {
                   </div>
                 )}
               </li>
-              {/* ------------------------------------------------------------ */}
-              {/* ----------------------------------------------------------- */}
               <li className="relative">
                 {" "}
-                {/* Added relative to parent container */}
                 <button
                   onClick={() => setCuriosityCornerOpen(!isCuriosityCornerOpen)}
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700"
@@ -310,7 +302,6 @@ const Test = () => {
                   </div>
                 )}
               </li>
-              {/* ------------------------------------------------------------ */}
               <li>
                 <a
                   href="#"
@@ -323,6 +314,7 @@ const Test = () => {
           </div>
         </div>
       </nav>
+      */}
     </>
   );
 };
