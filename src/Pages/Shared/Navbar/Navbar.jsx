@@ -16,7 +16,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
+          >  
             <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-8"
@@ -87,7 +87,10 @@ const Navbar = () => {
               title="Curiosity Corner"
               items={[
                 { label: "Resources", link: "/resources" },
-                { label: "Extracurricular Activities", link: "/extracurricular" },
+                {
+                  label: "Extracurricular Activities",
+                  link: "/extracurricular",
+                },
                 { label: "Alumni Section", link: "/alumni" },
                 { label: "Library", link: "/library" },
                 { label: "Events Calendar", link: "/events-calendar" },
@@ -162,7 +165,10 @@ const Navbar = () => {
                 title="Curiosity Corner"
                 items={[
                   { label: "Resources", link: "/resources" },
-                  { label: "Extracurricular Activities", link: "/extracurricular" },
+                  {
+                    label: "Extracurricular Activities",
+                    link: "/extracurricular",
+                  },
                   { label: "Alumni Section", link: "/alumni" },
                   { label: "Library", link: "/library" },
                   { label: "Events Calendar", link: "/events-calendar" },

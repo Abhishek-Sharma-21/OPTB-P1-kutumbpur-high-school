@@ -29,83 +29,83 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: 'about',
-        element: <AboutUs />
+        path: "about",
+        element: <AboutUs />,
       },
       {
-        path: 'contact',
-        element: <Contact />
+        path: "contact",
+        element: <Contact />,
       },
       {
-        path: 'updates',
-        element: <Updates />
+        path: "updates",
+        element: <Updates />,
       },
       {
-        path: 'testimonials',
-        element: <Testimonials />
+        path: "testimonials",
+        element: <Testimonials />,
       },
       {
-        path: 'edu-adventure',
-        element: <EduAdventure />
+        path: "edu-adventure",
+        element: <EduAdventure />,
       },
       {
-        path: 'academics',
-        element: <Academics />
+        path: "academics",
+        element: <Academics />,
       },
       {
-        path: 'admissions',
-        element: <Admissions />
+        path: "admissions",
+        element: <Admissions />,
       },
       {
-        path: 'events',
-        element: <Events />
+        path: "events",
+        element: <Events />,
       },
       {
-        path: 'portals',
-        element: <Portals />
+        path: "portals",
+        element: <Portals />,
       },
       {
-        path: 'faculty-portal',
-        element: <Faculty />
+        path: "faculty-portal",
+        element: <Faculty />,
       },
       {
-        path: 'student-portal',
-        element: <Student />
+        path: "student-portal",
+        element: <Student />,
       },
       {
-        path: 'parent-portal',
-        element: <Parent />
+        path: "parent-portal",
+        element: <Parent />,
       },
       {
-        path: 'curiosity-corner',
-        element: <CuriosityCorner />
+        path: "curiosity-corner",
+        element: <CuriosityCorner />,
       },
       {
-        path: 'resources',
-        element: <Resources />
+        path: "resources",
+        element: <Resources />,
       },
       {
-        path: 'extracurricular',
-        element: <ExtracurricularActivities />
+        path: "extracurricular",
+        element: <ExtracurricularActivities />,
       },
       {
-        path: 'alumni',
-        element: <AlumniSection />
+        path: "alumni",
+        element: <AlumniSection />,
       },
       {
-        path: 'library',
-        element: <Library />
+        path: "library",
+        element: <Library />,
       },
       {
-        path: 'events-calendar',
-        element: <EventsCalendar />
+        path: "events-calendar",
+        element: <EventsCalendar />,
       },
       {
-        path: 'faq',
-        element: <FAQ />
+        path: "faq",
+        element: <FAQ />,
       },
     ],
   },

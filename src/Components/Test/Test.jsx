@@ -1,7 +1,8 @@
-
 import { NavLink } from "react-router-dom";
 export const Dropdown = ({ title, items, isOpen, toggle }) => (
-  <div className="relative"> {/* Use a div instead of li */}
+  <div className="relative">
+    {" "}
+    {/* Use a div instead of li */}
     <button
       onClick={toggle}
       className="flex items-center justify-between w-full py-2 px-3 text-[#80ED99] rounded hover:bg-[#0AD1C8] md:hover:bg-transparent md:border-0 md:hover:text-[#45DFB1] md:p-0 md:w-auto dark:text-[#80ED99] dark:hover:text-[#0AD1C8] dark:focus:text-white dark:border-gray-700 dark:hover:bg-[#14919B]"
@@ -49,7 +50,7 @@ export const Dropdown = ({ title, items, isOpen, toggle }) => (
 //   return (
 //     <>
 //       {/* OPTB-P1-kutumbpur-high-school */}
-// {/* 
+// {/*
 //       <nav className="bg-[#213A57] border-gray-200 dark:bg-[#0B6477] dark:border-gray-700">
 //         <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
 //           <NavLink
